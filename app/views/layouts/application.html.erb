@@ -8,14 +8,21 @@
 </head>
 <body>
 	<header id="main_navigation" class="clearfix">
-		<a href="" class="name">Ricky Januari</a>
+		<%= link_to "Ricky Januari", root_path, class: "name" %>
 		<nav>
 			<%= link_to "Articles", posts_path %>
 			<a href="project.html">Project</a>
 			<a href="contact.html">Contact</a>
 		</nav>
 	</header>
-<%= yield %>
-
+	<%= yield %>
+	<footer id="main_footer">
+		<p class="copyright">&copy; 2015 Ricky Januari</p>
+		<nav>
+			<a href="http://twitter.com/rickyjanuari"><i class="fa fa-twitter"></i></a>
+			<a href="http://www.facebook.com/rickyjanuari"><i class="fa fa-facebook"></i></a>
+			<a href="http://github.com/rickyjanuari"><i class="fa fa-github"></i></a>
+		</nav>
+	</footer>
 </body>
 </html>
