@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog</title>
+  <title>Ricky  Januari - Web Developers</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+	<header id="main_navigation" class="clearfix">
+		<a href="" class="name">Ricky Januari</a>
+		<nav>
+			<%= link_to "Articles", posts_path %>
+			<a href="project.html">Project</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+	</header>
 <%= yield %>
 
 </body>
